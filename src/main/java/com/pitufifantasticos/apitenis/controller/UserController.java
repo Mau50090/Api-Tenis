@@ -54,6 +54,7 @@ public class UserController {
 		user.get().setNombre(userDetails.getNombre());
 		user.get().setEmail(userDetails.getEmail());
 		user.get().setUsername(userDetails.getUsername());
+		user.get().setFactura(userDetails.getFactura());
 		
 		
 		return ResponseEntity.status(HttpStatus.CREATED).body(userService.save(user.get()));
